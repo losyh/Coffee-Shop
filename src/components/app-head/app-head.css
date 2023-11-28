@@ -1,0 +1,83 @@
+.head {
+    background-image: url(../../img/2da47257edbb6967d6eb081e40d72df7.jpg);
+    position: relative;
+    height: 640px;
+}
+
+.coffe {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 145px;
+}
+
+.navigation {
+    color: #FFF;
+    font-family: Merienda;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+h1 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Merienda;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 auto;
+    margin-top: 181px;
+    text-align: center;
+}
+
+.coffe-beans {
+    width: 29.302px;
+    height: 29.302px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #FFF;
+    font-family: Merienda;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    text-align: center;
+}
+
+p {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Merienda;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.more {
+    width: 120px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid #FFF;
+    background: rgba(196, 196, 196, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
