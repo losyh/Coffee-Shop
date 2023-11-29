@@ -1,0 +1,53 @@
+.container {
+    background-image: url(../../img/bc/bc-item.jpeg);  
+    padding-top: 80px; 
+    height: 500px;
+}
+
+.menuItems {
+    margin: 0 auto; 
+    width: 960px;
+    display: flex;
+}
+h2 {
+    text-align: center;
+}
+.item-menu {
+
+    width: 220px;
+    height: 240px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.65);
+    margin: 0 auto;
+    margin-top: 39px;
+}
+
+img {
+    width: 151px;
+    height: 130px;
+    background: url(../../img/items/aromistico.jpeg), lightgray 50% / cover no-repeat;
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+    font-family: Merienda;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 26px;
+}
+ p {
+    margin-top: 10px;
+    margin-left: 153px;
+    color: #000;
+
+    font-family: Merienda;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+ }
+

@@ -1,0 +1,40 @@
+.cont {
+    width: 1440px;
+}
+
+.app-futter {
+    margin: 0 auto;
+    width: 960px;
+    height: 150px;
+    background: #FFF;
+}
+
+.nav {
+    margin: 0 auto;
+    display: flex;
+}
+
+.img1 {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.img2 {
+    width: 29.302px;
+    height: 29.302px;
+    flex-shrink: 0;
+    display: block;
+    margin-top: 30px;
+}
+
+span {
+    color: #000;
+    font-family: Merienda;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 52px;
+    margin-left: 40px;
+}

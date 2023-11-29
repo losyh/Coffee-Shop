@@ -9,7 +9,7 @@ class App extends Component {
 
         }
     }
-
+    
 
 
 
@@ -17,6 +17,7 @@ class App extends Component {
 
 
     render() {
+        const first = <FirstPage/>
         return (
         <div className="app">
             <FirstPage/>
