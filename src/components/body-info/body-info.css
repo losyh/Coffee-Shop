@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 
-h2 {
+.about {
     color: #000;
     font-family: Merienda;
     font-size: 24px;
@@ -15,10 +15,13 @@ h2 {
     margin-top: 80px;
 }
 
-img {
+.blac {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
+    width: 29.302px;
+    height: 29.302px;
+    flex-shrink: 0;
 }
 
 h3 {
@@ -30,4 +33,10 @@ h3 {
     font-weight: 400;
     line-height: normal;
     margin-top: 40px;
+}
+
+.info-body {
+    width: 589px;
+    height: 223px;
+    margin: 0 auto;
 }

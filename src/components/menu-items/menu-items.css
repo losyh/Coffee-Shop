@@ -1,7 +1,6 @@
-.container {
+.containerrr {
     background-image: url(../../img/bc/bc-item.jpeg);  
-    padding-top: 80px; 
-    height: 500px;
+    min-height: 495px;
 }
 
 .menuItems {
@@ -9,11 +8,18 @@
     width: 960px;
     display: flex;
 }
-h2 {
+.our {
+    color: #000;
     text-align: center;
+    font-family: Merienda;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 80px;
+
 }
 .item-menu {
-
     width: 220px;
     height: 240px;
     flex-shrink: 0;
@@ -23,10 +29,12 @@ h2 {
     margin-top: 39px;
 }
 
-img {
+.img-item {
     width: 151px;
     height: 130px;
     background: url(../../img/items/aromistico.jpeg), lightgray 50% / cover no-repeat;
+    margin-top: 22px;
+    margin-left: 34px;
 }
 
 h3 {

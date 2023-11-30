@@ -1,17 +1,20 @@
 import '../menu-items/menu-items.css'
+import aro from '../../img/items/aromistico.jpeg'
+import pre from '../../img/items/presto.jpeg'
+import sol from '../../img/items/solimo.jpeg'
 
 
 const items = [
-    {src: '../img/solimo.jpg', name: 'Solimo Coffee Beans 2 kg', price: '10.73$'},
-    {src: '../img/presto.jpg', name: 'Presto Coffee Beans 1 kg', price: '15.99$'},
-    {src: '../img/aromistico.jpg', name: 'AROMISTICO Coffee 1 kg', price: '6.99$'}
+    {src: sol, name: 'Solimo Coffee Beans 2 kg', price: '10.73$'},
+    {src: pre, name: 'Presto Coffee Beans 1 kg', price: '15.99$'},
+    {src: aro, name: 'AROMISTICO Coffee 1 kg', price: '6.99$'}
 ]
 
 const elem = items.map(item => {
     const {src, name, price} = item
     return (
         <div className="item-menu">
-            <img src={src} alt="item-menu" />
+            <img src={src} alt="item-menu" className='img-item'/>
             <h3>{name}</h3>
             <p>{price}</p>
         </div>
@@ -20,8 +23,8 @@ const elem = items.map(item => {
 
 const MenuItems = () => {
     return (
-        <div className="container">
-            <h2>Our best</h2>
+        <div className="containerrr">
+            <h2 className='our'>Our best</h2>
             <div className="menuItems">
             {elem}
             </div>

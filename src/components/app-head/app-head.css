@@ -1,7 +1,12 @@
 .head {
-    background-image: url(../../img/bc/coffe-head.jpg);
+    background: url(../../img/bc/desk-791178_1920.png) center center/cover no-repeat;
     position: relative;
     height: 640px;
+}
+
+.containerr {
+    width: 960px;
+    margin: 0 auto;
 }
 
 .coffe {
@@ -10,19 +15,21 @@
     flex-shrink: 0;
     position: absolute;
     margin-top: 30px;
-    margin-left: 145px;
+    margin-left: 10px;
+}
+
+.navv {
+    display: flex;
 }
 
 .navigation {
+    margin-left: 50px;
     color: #FFF;
     font-family: Merienda;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: flex;
-    flex-direction: row;
-    margin-left: 50px;
 }
 
 h1 {
@@ -46,7 +53,7 @@ h1 {
     margin-top: 20px;
 }
 
-h2 {
+.heads-item {
     color: #FFF;
     font-family: Merienda;
     font-size: 24px;
@@ -57,7 +64,7 @@ h2 {
     text-align: center;
 }
 
-p {
+.try {
     color: #FFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Merienda;
@@ -66,6 +73,7 @@ p {
     font-weight: 700;
     line-height: normal;
     text-align: center;
+    margin: 0 auto;
 }
 
 .more {
@@ -79,5 +87,11 @@ p {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
+    color: #FFF;
+    font-family: Merienda;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 
 }

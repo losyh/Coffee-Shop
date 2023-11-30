@@ -1,23 +1,31 @@
 .cont {
-    width: 1440px;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .app-futter {
     margin: 0 auto;
-    width: 960px;
     height: 150px;
     background: #FFF;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav {
-    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .img1 {
     width: 35px;
     height: 35px;
     flex-shrink: 0;
+    position: absolute;
+    margin-left: 320px;;
+    margin-top: 30px;
 }
 
 .img2 {
