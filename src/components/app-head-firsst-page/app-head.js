@@ -1,4 +1,4 @@
-import '../app-head/app-head.css'
+import '../app-head-firsst-page/app-head.css'
 import beans from '../../icons/c1.png'
 import beans2 from '../../icons/с2_white.svg'
 
@@ -12,7 +12,7 @@ const AppHead = () => {
                     <span className="navigation">Our coffee</span>
                     <span className="navigation">For your pleasure</span>
                 </div>
-                <h1>Everything You Love About Coffee</h1>
+                <h1 className='h1-first'>Everything You Love About Coffee</h1>
                 <img className='coffe-beans' src={beans2} alt="coffe-beans" />
                 <h2 className='heads-item'>We makes every day full of energy and taste</h2>
                 <h2 className='try'>Want to try our beans?</h2>

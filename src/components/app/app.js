@@ -8,11 +8,15 @@ class App extends Component {
     constructor (props) {
         super(props)
         this.state = {
-            activePage: 'first'
+            activePage: 'our'
         }
     }
     
-
+    OnCoffeHouse = (activePage) => {
+        this.setState(({activePage}) => ({
+            activePage: 'our'
+        }))
+    }
 
 
 
@@ -21,9 +25,9 @@ class App extends Component {
     render() {
         let state
         if (this.state.activePage === 'first') {
-            state = <FirstPage/>
+            state = <FirstPage OnCoffeHouse={this.OnCoffeHouse}/>
         } else if (this.state.activePage === 'our') {
-            state = <OurCofee/>
+            state = <OurCofee OnCoffeHouse={this.OnCoffeHouse}/>
         }
         return (
         <div className="app">

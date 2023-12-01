@@ -1,10 +1,10 @@
 import AppFutter from "../app-futter/app-futter"
-import AppHead from "../app-head/app-head"
+import AppHeadOur from "../head-Our-coffe/head-Our-coffe"
 
 const OurCofee = () => {
     return (
         <div className="our-coffe">
-            <AppHead/>
+            <AppHeadOur/>
             <AppFutter/>
         </div>
     )
