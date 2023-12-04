@@ -1,5 +1,5 @@
 .containerrr {
-    background-image: url(../../img/bc/bc-item.jpeg);  
+    background-image: url(../../../img/bc/bc-item.jpeg);  
     min-height: 495px;
 }
 
@@ -32,7 +32,7 @@
 .img-item {
     width: 151px;
     height: 130px;
-    background: url(../../img/items/aromistico.jpeg), lightgray 50% / cover no-repeat;
+    background: url(../../../img/items/aromistico.jpeg), lightgray 50% / cover no-repeat;
     margin-top: 22px;
     margin-left: 34px;
 }

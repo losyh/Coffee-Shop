@@ -1,15 +1,18 @@
-import AppHead from '../app-head-firsst-page/app-head'
-import BodyInfo from '../body-info/body-info'
-import MenuItems from '../menu-items/menu-items'
+import AppHead from './app-head-firsst-page/app-head'
+import BodyInfo from './body-info/body-info'
+import MenuItems from './menu-items/menu-items'
 import AppFutter from '../app-futter/app-futter'
 
-const FirstPage = () => {
+const FirstPage = ({changeActivePage}) => {
+    const OnchangePage = (name) => {
+        changeActivePage(name)
+    }
     return (
         <div className="firstPage">
-            <AppHead/>
+            <AppHead OnchangePage={OnchangePage}/>
             <BodyInfo/>
             <MenuItems/>
-            <AppFutter/>
+            <AppFutter OnchangePage={OnchangePage}/>
         </div>
     )
 }

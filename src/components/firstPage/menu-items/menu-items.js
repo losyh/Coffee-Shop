@@ -1,7 +1,7 @@
-import '../menu-items/menu-items.css'
-import aro from '../../img/items/aromistico.jpeg'
-import pre from '../../img/items/presto.jpeg'
-import sol from '../../img/items/solimo.jpeg'
+import './menu-items.css'
+import aro from '../../../img/items/aromistico.jpeg'
+import pre from '../../../img/items/presto.jpeg'
+import sol from '../../../img/items/solimo.jpeg'
 
 
 const items = [

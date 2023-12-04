@@ -1,40 +1,33 @@
-import { Component } from 'react'
+import React, {useState} from 'react'
 import FirstPage from '../firstPage/firstPage'
 import OurCofee from '../ourCoffee/OurCoffee'
 import'./app.css'
 
 
-class App extends Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-            activePage: 'our'
-        }
-    }
-    
-    OnCoffeHouse = (activePage) => {
-        this.setState(({activePage}) => ({
-            activePage: 'our'
-        }))
-    }
+const App = (props) => {
+        const [state, setState] = useState({
+            activePage: 'first'
+        })
 
+        const changeActivePage = (name) => {
+            setState({
+              ...state,
+              activePage: name
+            })
+          }
 
-
-
-
-    render() {
-        let state
-        if (this.state.activePage === 'first') {
-            state = <FirstPage OnCoffeHouse={this.OnCoffeHouse}/>
-        } else if (this.state.activePage === 'our') {
-            state = <OurCofee OnCoffeHouse={this.OnCoffeHouse}/>
+        let page
+        if (state.activePage === 'first') {
+            page = <FirstPage changeActivePage={changeActivePage}/>
+        } else if (state.activePage === 'our') {
+            page = <OurCofee changeActivePage={changeActivePage}/>
         }
         return (
         <div className="app">
-            {state}
+            {page}
         </div>
         )
     }
-}
+
 
 export default App

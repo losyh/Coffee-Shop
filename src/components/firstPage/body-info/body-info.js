@@ -1,5 +1,5 @@
-import '../body-info/body-info.css'
-import black from '../../icons/c2-black (2).png'
+import './body-info.css'
+import black from '../../../icons/c2-black (2).png'
 
 const BodyInfo = () => {
     return (
