@@ -1,0 +1,107 @@
+.look {
+    color: #000;
+    text-align: center;
+    font-family: Merienda;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0;
+}
+.look-filter{
+    margin-left: 83px;
+}
+
+input {
+    width: 180px;
+    height: 30px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    margin-left: 19px;
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Merienda;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;;
+}
+
+.brazil {
+    width: 75px;
+    height: 30px;
+    border-radius: 4px 0px 0px 4px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Merienda;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.kenya {
+    width: 75px;
+    height: 30px;
+    border-radius: 0px 0px 0px 0px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Merienda;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.columbia {
+    width: 75px;
+    height: 30px;
+    border-radius: 0px 4px 4px 0px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+    font-family: Merienda;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.coffe-item {
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    background: #FFF;
+    margin-left: 71px;
+    width: 220px;
+    height: 260px;
+    margin-top: 60px;
+    padding-top: 37px;
+}
+
+.img-item-our {
+    display: block;
+    margin-left: 13px;
+}
+
+.country {
+    margin-top: 14px;
+    text-align: end;
+    margin-right: 15px;
+}
+
+.price {
+    margin-top: 14px;
+    text-align: end;
+    margin-right: 15px;
+    font-weight: 700;
+}
