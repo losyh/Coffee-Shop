@@ -11,7 +11,8 @@ const AppFilter = () => {
             {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
             {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
             {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
-        ]
+        ],
+        term: ''
     })
 
     const elem = state.items.map(res => {
@@ -46,6 +47,25 @@ const AppFilter = () => {
         }
     }
 
+    const OnUpdateSearch = (e, Newitems) => {
+        const NewTerm = e.target.value
+                setState({
+            ...state,
+            items: Newitems,
+            term: NewTerm
+          })
+    }
+
+    const searchEmp = () => {
+        const items = state.items
+        if (state.term.length === 0) {
+            return items
+        }
+        return items.filter(item => {
+            return item.name.indexOf(state.term)
+        })
+    }
+
     const OnUpdateFilter = (filter) => {
         setState({
             ...state,
@@ -57,7 +77,7 @@ const AppFilter = () => {
         <div className="container mb-3">
             <div className="d-flex flex-row mb-3 mt-5 justify-content-center">
                 <p className="look p-2">Lookiing for</p>
-                <input type="text" placeholder="start typing here..." className="p-2"/>
+                <input type="text" placeholder="start typing here..." className="p-2" onChange={OnUpdateSearch(e, searchEmp())}/>
                 <p className="look look-filter p-2">Or filter</p>
                 <button className="brazil" onClick={() => OnUpdateFilter(filterPost(state.items, 'Brazil'))}>Brazil</button>
                 <button className="kenya" onClick={() => OnUpdateFilter(filterPost(state.items, 'Kenya'))}>Kenya</button>
