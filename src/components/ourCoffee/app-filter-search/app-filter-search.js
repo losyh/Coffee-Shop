@@ -54,6 +54,7 @@ const AppFilter = () => {
             items: Newitems,
             term: NewTerm
           })
+          console.log(NewTerm)
     }
 
     const searchEmp = () => {
@@ -62,7 +63,7 @@ const AppFilter = () => {
             return items
         }
         return items.filter(item => {
-            return item.name.indexOf(state.term)
+            return item.name.indexOf(state.term) > -1
         })
     }
 
@@ -77,7 +78,7 @@ const AppFilter = () => {
         <div className="container mb-3">
             <div className="d-flex flex-row mb-3 mt-5 justify-content-center">
                 <p className="look p-2">Lookiing for</p>
-                <input type="text" placeholder="start typing here..." className="p-2" onChange={OnUpdateSearch(e, searchEmp())}/>
+                <input type="text" placeholder="start typing here..." className="p-2" onChange={(e) => OnUpdateSearch(e, searchEmp())}/>
                 <p className="look look-filter p-2">Or filter</p>
                 <button className="brazil" onClick={() => OnUpdateFilter(filterPost(state.items, 'Brazil'))}>Brazil</button>
                 <button className="kenya" onClick={() => OnUpdateFilter(filterPost(state.items, 'Kenya'))}>Kenya</button>

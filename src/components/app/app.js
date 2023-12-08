@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import FirstPage from '../firstPage/firstPage'
 import OurCofee from '../ourCoffee/OurCoffee'
+import ForYouPleasure from '../foYouPleasure/foYouPleasure'
 import'./app.css'
 
 
-const App = (props) => {
+const App = () => {
         const [state, setState] = useState({
             activePage: 'first'
         })
@@ -12,7 +13,7 @@ const App = (props) => {
         const changeActivePage = (name) => {
             setState({
               ...state,
-              activePage: name
+              activePage: name 
             })
           }
 
@@ -21,7 +22,10 @@ const App = (props) => {
             page = <FirstPage changeActivePage={changeActivePage}/>
         } else if (state.activePage === 'our') {
             page = <OurCofee changeActivePage={changeActivePage}/>
+        } else if (state.activePage === 'for') {
+            page = <ForYouPleasure changeActivePage={changeActivePage}/>
         }
+
         return (
         <div className="app">
             {page}
