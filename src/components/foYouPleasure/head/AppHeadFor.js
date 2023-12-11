@@ -1,5 +1,5 @@
 import './AppHeadFor.css'
-import beans from '../../../icons/c1.png'
+import beans from '../../../icons/beans white.png'
 
 const AppHeadFor = ({OnchangePage}) => {
     const OurChangePage = () => {

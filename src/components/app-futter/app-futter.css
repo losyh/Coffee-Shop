@@ -24,7 +24,7 @@
     height: 35px;
     flex-shrink: 0;
     position: absolute;
-    margin-left: 320px;;
+    margin-left: 310px;;
     margin-top: 30px;
 }
 
@@ -33,6 +33,7 @@
     height: 29.302px;
     flex-shrink: 0;
     display: block;
+    margin: 0 auto;
     margin-top: 30px;
 }
 

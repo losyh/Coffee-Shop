@@ -1,6 +1,6 @@
 import '../app-futter/app-futter.css'
-import beans from '../../icons/coffee-beans.jpg'
-import beans1 from '../../icons/coffee-beans (1).jpg'
+import beans from '../../icons/beans black futter.png'
+import beans1 from '../../icons/c2-black (2).png'
 
 const AppFutter = ({OnchangePage}) => {
 
@@ -17,7 +17,7 @@ const AppFutter = ({OnchangePage}) => {
     return (
         <div className="cont">
             <div className="app-futter">
-            <img src={beans} alt="coffe-beans" className='img1' />
+            <img src={beans} alt="coffe-beans-futter" className='img1' />
                 <div className="nav">
                     <span className="Coffee house" onClick={FirstChangePage}>Coffee house</span>
                     <span className="Our coffee" onClick={OurChangePage}>Our coffee</span>

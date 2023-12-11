@@ -10,12 +10,20 @@ const AppFilter = () => {
             {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Columbia', price: '6.99$'},
             {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
             {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
-            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'}
         ],
-        term: ''
+        term: '',
+        filter: [
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Kenya', price: '6.99$'},
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Columbia', price: '6.99$'},
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'},
+            {img: coffe, name: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99$'}
+        ]
     })
 
-    const elem = state.items.map(res => {
+    const elem = state.filter.map(res => {
         return (
             <div className="coffe-item col-4">
                 <img className='img-item-our' src={res.img} alt="coofe-item" />
@@ -46,6 +54,7 @@ const AppFilter = () => {
                 return items
         }
     }
+    filterPost()
 
     const OnUpdateSearch = (e, Newitems) => {
         const NewTerm = e.target.value
@@ -70,8 +79,8 @@ const AppFilter = () => {
     const OnUpdateFilter = (filter) => {
         setState({
             ...state,
-            items: filter
-          })
+            filter: filter
+        })
     }
     
     return (

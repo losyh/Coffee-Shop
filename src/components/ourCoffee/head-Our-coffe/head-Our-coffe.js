@@ -1,6 +1,6 @@
 
 import '../head-Our-coffe/head-Our-coffe.css'
-import beans from '../../../icons/c1.png'
+import beans from '../../../icons/beans white.png'
 
 const AppHeadOur = ({OnchangePage}) => {
     const OurChangePage = () => {

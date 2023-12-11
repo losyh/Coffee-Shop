@@ -1,5 +1,5 @@
 import './app-head.css'
-import beans from '../../../icons/c1.png'
+import beans from '../../../icons/beans white.png'
 import beans2 from '../../../icons/с2_white.svg'
 
 const AppHead = ({OnchangePage}) => {
